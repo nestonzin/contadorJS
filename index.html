@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContadorJS</title>
+</head>
+
+<style>
+    *{
+        margin: 0 auto;
+        padding: 0;
+        background-color: orange;
+    }
+
+    .max-width {
+        background-color: orange;
+        max-width: 500px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 10px;
+        border: none;
+        font-family: 'Segoe UI';
+        font-size: 1em;
+        transition: all .5s;
+        cursor: pointer;
+        border-radius: 25px;
+
+    }
+    
+    button:hover {
+        background-color: yellow;
+    }
+
+    .bg-green {
+        background-color: #b2da1da1;
+    }
+
+    .bg-yellow {
+        background-color: #d1cba1;
+    }
+
+    .bg-red {
+        background-color: #d1a1a1;
+    }
+</style>
+
+
+<body>
+    
+    <div class="max-width">
+        <div>
+        <button onclick="start();" class="bg-green">Começar</button>
+        <button onclick="pause();" class="bg-red">Pausar</button>
+        <button onclick="stop();" class="bg-yellow">Resetar</button>
+        </div>
+        <h1 id="counter">00:00:00</h1>
+    </div>
+
+    <script src="cron.js"></script>
+</body>
+</html>
